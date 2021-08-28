@@ -4,14 +4,12 @@ import "./css/DashBoard.css";
 
 const Product = () => {
   let location = useLocation();
-  console.log("product::", location.state);
   const { productInfo } = location.state;
-  console.log("product::", productInfo);
   return (
     <>
       <div className="single__product_catalogue">
         {productInfo && (
-          <div className="product__card">
+          <div className="product__cards">
             <div className="product__name">{productInfo.product_name}</div>
             <div className="product__pic">
               {productInfo.image && productInfo.image.length > 0 && (

@@ -87,3 +87,6 @@ nav {
   font-size: larger;
   font-weight: 600;
 }
+.product__cards {
+  padding: 90px;
+}
